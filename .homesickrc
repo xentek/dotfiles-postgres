@@ -1,0 +1,4 @@
+empty_directory '~/.psql_history'
+insert_into_file "~/.xenrc/postgres.rc" do
+  ask("PGDATA path:", default: '/usr/local/var/postgres', path: true)
+end

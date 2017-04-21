@@ -1,2 +1,2 @@
 # dotfiles-postgres
-PostgreSQL related dotfiles
+PostgreSQL config, packaged for homesick
