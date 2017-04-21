@@ -1,5 +1,5 @@
 empty_directory '~/.psql_history'
-append_to_file "~/.xenrc/postgres.rc" do
-  pgdata = ask('PGDATA path:', { default: '/usr/local/var/postgres', path: true })
+create_file "~/.xenrc/postgres.rc" do
+  pgdata = ask('PGDATA path:', default: '/usr/local/var/postgres', path: true)
   "export PGDATA=#{pgdata}"
 end
